@@ -2,7 +2,7 @@
 
 # Meeting Sign-In Sheet
 
-Each student should put an 'X' under their name on the days they have meetings.
+<!-- step 5, making a change -->
 
 ### November 2023
 
