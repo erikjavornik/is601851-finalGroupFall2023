@@ -12,7 +12,7 @@
 | Date        | Erik | Mohammad | 
 |-------------|-----------|-----------|
 | Nov 10 (Fri)|    __X__       |     X     |
-| Nov 11 (Sat)|           |           |
+| Nov 11 (Sat)|           |     *X*     |
 | Nov 17 (Fri)|           |           |
 | Nov 18 (Sat)|           |           | 
 | Nov 24 (Fri)|           |           | 
