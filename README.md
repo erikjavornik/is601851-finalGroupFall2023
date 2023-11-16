@@ -28,3 +28,7 @@
 | Dec 9 (Sat)  |           |           |       
 | Dec 15 (Fri) |           |           |           
 | Dec 16 (Sat) |           |           | 
+
+
+[Mohammad's Repo](https://github.com/FunkeMonke/is601851-finalGroupFall2023)
+[Erik's Repo](https://github.com/erikjavornik/is601851-finalGroupFall2023)
