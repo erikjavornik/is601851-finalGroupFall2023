@@ -9,3 +9,6 @@ header_height <- abs_tot_width * 0.07
 footer_height <- abs_tot_width * 0.13
 menu_showcase <- (abs_tot_width)/2
 user_story_height <- (abs_tot_width)/2
+
+heights <- c(header_height, footer_height, menu_showcase, user_story_height)
+sum(heights) == abs_tot_height
