@@ -5,7 +5,7 @@ abs_tot_height <- 1400 + (1400*0.2) # 0.05 for header and 0.15 for footer
 
 
 # Heights
-header_height <- abs_tot_width * 0.05
-footer_height <- abs_tot_width * 0.15
+header_height <- abs_tot_width * 0.07
+footer_height <- abs_tot_width * 0.13
 menu_showcase <- (abs_tot_width)/2
 user_story_height <- (abs_tot_width)/2
