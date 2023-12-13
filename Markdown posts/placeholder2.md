@@ -1,6 +1,6 @@
 ---
 title: 'Placeholder 2'
-date: '12/11/2023'
+date: '2023-12-11'
 ---
 
 Placeholder text

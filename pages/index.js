@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
 import Date from '../components/date';
-import { getSortedPostsData } from '../lib/posts';
+import { getSortedPostsData } from '../lib/menu_posts.js';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
