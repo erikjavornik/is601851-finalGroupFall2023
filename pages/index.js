@@ -1,9 +1,19 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
+import { getMenuFiles } from '../lib/menu_posts.js';
 
+export async function getStaticProps() {
+  const menu = getMenuFiles();
 
-export default function Home() {
+  return {
+    props: {
+      menu,
+    },
+  };
+}
+
+export default function Home({menu}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -18,6 +28,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Test</h1>
+        <ul>
+        {menu.map((menu) => (
+          <li key={menu.fileName}>
+            <h2>{menu.data.title}</h2>
+          </li>
+        ))}
+      </ul>
       </main>
 
 
