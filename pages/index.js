@@ -31,7 +31,7 @@ export default function Home({menu}) {
         <ul>
         {menu.map((menu) => (
           <li key={menu.fileName}>
-            <h2>{menu.data.title}</h2>
+            <h2>{menu.data?.title}</h2>
           </li>
         ))}
       </ul>
