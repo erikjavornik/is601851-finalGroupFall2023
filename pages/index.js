@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <header className={styles.navbar}>
-        {/* <Logo /> */}
+        <img src="/cafe_logo.jpg" alt="M&E Creative Cup" className={styles.logo} />
         <Navbar />
       </header>
 
