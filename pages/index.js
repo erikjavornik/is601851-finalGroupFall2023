@@ -30,16 +30,14 @@ export default function Home({menu, testimonies}) {
       </header>
 
       <main className={styles.main}>
-            {menu.map(({ fileName, matterResults, content }) => (
+            {menu.map(({ fileName, content }) => (
                 <div key={fileName}>
-                    <h1>{matterResults.title}</h1>
                     <p>{content}</p>
                 </div>
             ))}
 
-            {testimonies.map(({ fileName, matterResults, content }) => (
+            {testimonies.map(({ fileName, content }) => (
                 <div key={fileName}>
-                    <h1>{matterResults.title}</h1>
                     <p>{content}</p>
                 </div>
             ))}
