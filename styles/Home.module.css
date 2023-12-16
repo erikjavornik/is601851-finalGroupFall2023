@@ -51,14 +51,10 @@
   }
 }
 
-/* styles/Home.module.css */
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-  gap: 16px; /* Adjust the gap between items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px; 
 }
 
-.gridItem {
-  /* Add additional styling for each grid item if needed */
-}
 
