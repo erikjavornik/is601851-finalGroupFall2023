@@ -4,7 +4,7 @@
     "build": "next build",
     "dev": "next dev",
     "start": "next start",
-    "test": "playwright test" // Add this line to include the test script
+    "test": "playwright test"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -13,7 +13,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.22.2" // Add Playwright to dev dependencies
+    "@playwright/test": "^1.22.2"
   },
   "engines": {
     "node": ">=18"
