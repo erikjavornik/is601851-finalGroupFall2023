@@ -21,7 +21,7 @@ export default function Home({menu, testimonies}) {
     <div className={styles.container}>
       <Head>
         <title>M&E Creative Cup</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cafe_logo.jpg" />
       </Head>
 
       <header className={styles.navbar}>
