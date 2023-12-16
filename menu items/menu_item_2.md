@@ -1,5 +1,5 @@
 ---
-title: 'Placeholder 1'
+title: 'Menu Item 2'
 date: '2023-12-11'
 ---
 
