@@ -3,13 +3,17 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "test": "playwright test" // Add this line to include the test script
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.22.2" // Add Playwright to dev dependencies
   },
   "engines": {
     "node": ">=18"
