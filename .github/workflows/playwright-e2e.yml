@@ -33,10 +33,3 @@ jobs:
       if: always()
       run: kill $(jobs -p) || true
       shell: bash
-
-    - uses: actions/upload-artifact@v3
-      if: always()
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
