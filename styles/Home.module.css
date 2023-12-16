@@ -50,3 +50,15 @@
     flex-direction: column;
   }
 }
+
+/* styles/Home.module.css */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 16px; /* Adjust the gap between items */
+}
+
+.gridItem {
+  /* Add additional styling for each grid item if needed */
+}
+
