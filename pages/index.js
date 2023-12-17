@@ -31,17 +31,21 @@ export default function Home({menu, testimonies}) {
 
       <main className={styles.main}>
         <div className={styles.gridContainer}>
-            {menu.map(({ fileName, content }) => (
-                <div key={fileName} className={styles.gridIten}>
-                    <p>{content}</p>
-                </div>
-            ))}
 
-            {testimonies.map(({ fileName, content }) => (
-                <div key={fileName}>
-                    <p>{content}</p>
-                </div>
-            ))}
+          {menu.map(({ fileName, content, imagePath }) => (
+              <div key={fileName} className={styles.gridItem}>
+                {<img src={imagePath} alt={fileName} />}
+                  <p>{content}</p>
+              </div>
+          ))}
+
+          {testimonies.map(({ fileName, content, imagePath }) => (
+              <div key={fileName}>
+                  {<img src={imagePath} alt={fileName} />}
+
+                  <p>{content}</p>
+              </div>
+          ))}
         </div>
       </main>
 
