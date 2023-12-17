@@ -22,7 +22,7 @@ export default function About({about}) {
             </Head>
 
             <header className={styles.navbar}>
-            <img src="/cafe_logo.jpg" alt="M&E Creative Cup" className={styles.logo} />
+            <img src="/cafe_logo.jpg" alt="M&E Creative Cup" className={styles.cafelogo} />
             <Navbar />
             </header>
 
