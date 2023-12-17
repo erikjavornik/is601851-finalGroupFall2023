@@ -25,7 +25,7 @@ export default function Home({menu, testimonies}) {
       </Head>
 
       <header className={styles.navbar}>
-        <img src="/cafe_logo.jpg" alt="M&E Creative Cup" className={styles.logo} />
+        <img src="/cafe_logo.jpg" alt="M&E Creative Cup" className={styles.cafelogo} />
         <Navbar />
       </header>
 

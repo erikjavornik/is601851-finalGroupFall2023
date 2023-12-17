@@ -1,12 +1,13 @@
 import Link from 'next/link';
+import style from './navbar.module.css'
 
 export default function Navbar()  {
     return (
 
         <nav>
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/menu">Menu/Order</Link>
+            <Link className={style.menuitem} href="/">Home</Link>
+            <Link className={style.menuitem} href="/about">About</Link>
+            <Link className={style.menuitem} href="/menu">Menu/Order</Link>
         </nav>
     )
 }
