@@ -1,8 +1,19 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
+import { getAboutFiles } from '../lib/about_posts';
 
-export default function Home() {
+export async function getStaticProps() {
+    const about = getAboutFiles();
+    
+    return {
+      props: {
+        about,
+      },
+    };
+  }
+
+export default function About({about}) {
     return (
         <div className={styles.container}>
             <Head>
@@ -16,7 +27,16 @@ export default function Home() {
             </header>
 
             <main className={styles.main}>
-                <h1>Test</h1>
+                <div className={styles.gridContainer}>
+
+                    {about.map(({ fileName, content, imagePath }) => (
+                        <div key={fileName} className={styles.gridItem}>
+                            {<img src={imagePath} alt={fileName} />}
+                            <p>{content}</p>
+                        </div>
+                    ))}
+                    
+                </div>
             </main>
 
             <footer className={styles.footer}>
