@@ -11,3 +11,13 @@ test('Check for about text 1 on the About page', async ({ page }) => {
   await expect(page.locator(`text=${specificText}`)).toBeVisible();
 });
 
+test('Check for about text 2 on the About page', async ({ page }) => {
+    // Replace with the actual URL or path to your About page
+    await page.goto('http://localhost:3000/about');
+  
+    // Replace with the actual text you are checking for
+    const specificText = "Adjacent to lively farmers' markets, our cafe becomes a creative playground where customers craft unique drinks with fresh, local fruits and vegetables. ";
+  
+    // Check if the text is present
+    await expect(page.locator(`text=${specificText}`)).toBeVisible();
+  });
