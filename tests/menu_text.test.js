@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Check for specific text on the main page', async ({ page }) => {
+test('Check for menu_item1 text on the main page', async ({ page }) => {
   // Navigate to the main page
   await page.goto('http://localhost:3000');
 
@@ -11,7 +11,7 @@ test('Check for specific text on the main page', async ({ page }) => {
   await expect(page.locator(`text=${specificText}`)).toBeVisible();
 });
 
-test('Check for another specific text on the main page', async ({ page }) => {
+test('Check for menu_item2 text on the main page', async ({ page }) => {
     // Navigate to the main page
     await page.goto('http://localhost:3000');
   
