@@ -1,5 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
+// Functionality Tests
+
 test('Navbar "Home" button navigation test', async ({ page }) => {
   // Navigate to a different page or the homepage itself
   await page.goto('http://localhost:3000/about'); // Replace '/about' with an appropriate path
@@ -27,3 +29,5 @@ test('Navbar "About" button navigation test', async ({ page }) => {
   // Optionally, assert the presence of a unique element on the About page
   // await expect(page.locator('unique-about-page-element-selector')).toBeVisible();
 });
+
+
