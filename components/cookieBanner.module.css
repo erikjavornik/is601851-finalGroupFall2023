@@ -1,0 +1,7 @@
+.text-center {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #c0c0c0;
+    padding: 1rem;
+    border-radius: 10px
+}
