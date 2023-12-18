@@ -21,3 +21,14 @@ test('Check for menu_item2 text on the main page', async ({ page }) => {
     // Assert that the specific text is present and visible on the page
     await expect(page.locator(`text=${specificText}`)).toBeVisible();
   });
+
+  test('Check for menu_item3 text on the main page', async ({ page }) => {
+    // Navigate to the main page
+    await page.goto('http://localhost:3000');
+  
+    // The specific text to check for
+    const specificText = "Spiced and soothing, this chai latte melds black tea with aromatic spices, wrapped in creamy steamed milk.";
+  
+    // Assert that the specific text is present and visible on the page
+    await expect(page.locator(`text=${specificText}`)).toBeVisible();
+  });
