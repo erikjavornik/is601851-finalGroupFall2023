@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
-import { getFullMenuContent } from '../lib/full_menu_post'; // Updated import
-import GoogleAnalytics from '../components/GoogleAnalytics'; // Corrected component name
+import { getFullMenuContent } from '../lib/full_menu_post'; 
+import GoogleAnalytics from '../components/GoogleAnalytics'; 
 import CookieBanner from '../components/cookiebanner';
 
 export async function getStaticProps() {
-  const menuContent = getFullMenuContent(); // Updated function call
+  const menuContent = getFullMenuContent(); 
   
   return {
     props: {
@@ -35,7 +35,7 @@ export default function MenuPage({ menuContent }) {
         <div className={styles.gridContainer}>
           {/* Display the menu content */}
           <div className={styles.gridItem}>
-            <p>{menuContent.content}</p> {/* Removed image reference */}
+            <p>{menuContent.content}</p> 
           </div>
         </div>
       </main>
