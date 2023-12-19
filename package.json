@@ -7,6 +7,7 @@
     "test": "playwright test"
   },
   "dependencies": {
+    "emoji-toolkit": "^8.0.0",
     "gray-matter": "^4.0.3",
     "marked": "^11.1.0",
     "next": "latest",
