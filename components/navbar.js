@@ -7,7 +7,8 @@ export default function Navbar()  {
         <nav>
             <Link className={style.menuitem} href="/">Home</Link>
             <Link className={style.menuitem} href="/about">About</Link>
-            <Link className={style.menuitem} href="/menu">Menu/Order</Link>
+            <Link className={style.menuitem} href="/menu">Menu</Link>
+            <Link className={style.menuitem} href="/order">Order</Link>
         </nav>
     )
 }
