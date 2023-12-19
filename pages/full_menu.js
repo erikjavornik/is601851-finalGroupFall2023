@@ -1,28 +1,25 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
-import { getMenuFiles } from '../lib/menu_posts.js';
-import { getTestimonyFiles } from '../lib/testimony_posts.js';
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import { getFullMenuContent } from '../lib/full_menu_post'; 
+import GoogleAnalytics from '../components/GoogleAnalytics'; 
 import CookieBanner from '../components/cookiebanner';
 
 export async function getStaticProps() {
-  const menu = getMenuFiles();
-  const testimonies = getTestimonyFiles();
+  const menuContent = getFullMenuContent(); 
   
   return {
     props: {
-      menu,
-      testimonies,
+      menuContent,
     },
   };
 }
 
-export default function Home({menu, testimonies}) {
+export default function MenuPage({ menuContent }) { 
   return (
     <div className={styles.container}>
       <Head>
-        <title>M&E Creative Cup</title>
+        <title>M&E Creative Cup - Menu</title> 
         <link rel="icon" href="/cafe_logo.jpg" />
       </Head>
 
@@ -36,24 +33,12 @@ export default function Home({menu, testimonies}) {
 
       <main className={styles.main}>
         <div className={styles.gridContainer}>
-
-          {menu.map(({ fileName, content, imagePath }) => (
-              <div key={fileName} className={styles.gridItem}>
-                {<img src={imagePath} alt={fileName} />}
-                  <p>{content}</p>
-              </div>
-          ))}
-
-          {testimonies.map(({ fileName, content, imagePath }) => (
-              <div key={fileName}>
-                  {<img src={imagePath} alt={fileName} />}
-
-                  <p>{content}</p>
-              </div>
-          ))}
+          {/* Display the menu content */}
+          <div className={styles.gridItem}>
+            <p>{menuContent.content}</p> 
+          </div>
         </div>
       </main>
-
 
       <footer className={styles.footer}>
         <a
