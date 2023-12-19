@@ -4,7 +4,8 @@ import Navbar from '../components/navbar.js';
 import { getFullMenuContent } from '../lib/full_menu_post'; 
 import GoogleAnalytics from '../components/GoogleAnalytics'; 
 import CookieBanner from '../components/cookiebanner';
-import {marked} from 'marked'; // Use the correct import statement here
+import { marked } from 'marked';
+import joypixels from 'emoji-toolkit'; // Import emoji-toolkit
 
 export async function getStaticProps() {
   const menuContent = getFullMenuContent(); 
@@ -16,8 +17,11 @@ export async function getStaticProps() {
 }
 
 export default function MenuPage({ menuContent }) { 
-  const htmlContent = marked(menuContent.content); // Convert Markdown to HTML
+  // Convert Markdown to HTML
+  let htmlContent = marked(menuContent.content); 
 
+  // Convert emoji shortcodes to actual emojis
+  htmlContent = joypixels.shortnameToUnicode(htmlContent);
 
   return (
     <div className={styles.container}>
