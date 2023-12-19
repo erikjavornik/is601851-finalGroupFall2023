@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
 import { getMenuFiles } from '../lib/menu_posts.js';
 import { getTestimonyFiles } from '../lib/testimony_posts.js';
-import GoogleAnalytics from '../components/GoogleAnalyytics';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import CookieBanner from '../components/cookiebanner';
 
 export async function getStaticProps() {

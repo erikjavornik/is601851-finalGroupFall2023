@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/navbar.js'
 import { getAboutFiles } from '../lib/about_posts';
-import GoogleAnalytics from '../components/GoogleAnalyytics';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 import CookieBanner from '../components/cookiebanner';
 
 export async function getStaticProps() {
