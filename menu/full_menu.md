@@ -3,7 +3,7 @@ title: 'Full Menu'
 date: '2023-12-19'
 ---
 
-**Café Delights Menu**
+**M & E's Creative Cup Menu**
 
 :coffee: **Coffee Selections**
 
@@ -26,3 +26,6 @@ date: '2023-12-19'
    - Ingredients: Black Tea, Chai Spices, Steamed Milk
 4. **Jasmine Delight** - $3.00
    - Ingredients: Jasmine Green Tea
+
+🫖 **Creative Cup** - $17.00
+   - Ingredients: Maximum of 5 Fruits or Vegetables
