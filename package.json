@@ -9,7 +9,7 @@
   "dependencies": {
     "emoji-toolkit": "^8.0.0",
     "gray-matter": "^4.0.3",
-    "isomorphic-unfetch": "4.0.2",
+    "isomorphic-unfetch": "^4.0.2",
     "marked": "^11.1.0",
     "next": "latest",
     "react": "18.2.0",
