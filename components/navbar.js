@@ -8,7 +8,6 @@ export default function Navbar()  {
             <Link className={style.menuitem} href="/">Home</Link>
             <Link className={style.menuitem} href="/about">About</Link>
             <Link className={style.menuitem} href="/full_menu">Menu</Link>
-            <Link className={style.menuitem} href="/order">Order</Link>
         </nav>
     )
 }
