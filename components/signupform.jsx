@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import subscribeUser from '../pages/api/subscribeUser';
 
 export default function NewsLetterSignUpForm() {
   const inputRef = useRef(null);
@@ -7,25 +6,25 @@ export default function NewsLetterSignUpForm() {
   const subscribeUser = async (e) => {
     e.preventDefault();
 
-    // this is where your mailchimp request is made
-
     const res = await fetch('/api/subscribeUser', {
-      body: JSON.stringify({
-        email: inputRef.current.value,
-      }),
-
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-
-      method: 'POST',
+      body: JSON.stringify({
+        email: inputRef.current.value,
+      }),
     });
+
+    // Handle response if needed
+    const result = await res.json();
+    console.log(result);
   };
 
   return (
     <form onSubmit={subscribeUser}>
       <label htmlFor="email-input" className="form__label">
-        Sign-up for Exclusive Offers:      
+        Sign-up for Exclusive Offers:
       </label>
 
       <input
