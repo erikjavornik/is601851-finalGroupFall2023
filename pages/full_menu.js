@@ -6,6 +6,7 @@ import GoogleAnalytics from '../components/GoogleAnalytics';
 import CookieBanner from '../components/cookiebanner';
 import { marked } from 'marked';
 import joypixels from 'emoji-toolkit'; // Import emoji-toolkit
+import NewsLetterSignUpForm from '../components/signupform';
 
 export async function getStaticProps() {
   const menuContent = getFullMenuContent(); 
@@ -46,10 +47,7 @@ export default function MenuPage({ menuContent }) {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank" rel="noopener noreferrer">
-          Powered by <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+        <NewsLetterSignUpForm />
       </footer>
     </div>
   );
